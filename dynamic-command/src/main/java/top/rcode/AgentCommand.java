@@ -15,7 +15,7 @@ import java.io.IOException;
 public class AgentCommand {
 
     public static void main(String[] args) throws IOException, AttachNotSupportedException, AgentLoadException, AgentInitializationException {
-        VirtualMachine target = VirtualMachine.attach("66757");//目标VM线程ID
+        VirtualMachine target = VirtualMachine.attach("72660");//目标VM线程ID
 
         String agentOps = "top.rcode.controller.HelloController" +
                 "," +

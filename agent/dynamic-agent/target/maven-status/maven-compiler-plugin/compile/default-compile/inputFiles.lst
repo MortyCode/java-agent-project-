@@ -1,1 +1,4 @@
+/Users/hailingliang/app/workspace/java-agent-project/agent/dynamic-agent/src/main/java/top/rcode/visitor/PreMethordVisitor.java
+/Users/hailingliang/app/workspace/java-agent-project/agent/dynamic-agent/src/main/java/top/rcode/visitor/PreClassVisitor.java
+/Users/hailingliang/app/workspace/java-agent-project/agent/dynamic-agent/src/main/java/top/rcode/transformer/BaseTransformer.java
 /Users/hailingliang/app/workspace/java-agent-project/agent/dynamic-agent/src/main/java/top/rcode/AgentDynamic.java

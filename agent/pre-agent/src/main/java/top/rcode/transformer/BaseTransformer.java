@@ -1,5 +1,13 @@
 package top.rcode.transformer;
 
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import top.rcode.visitor.PreClassVisitor;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.IllegalClassFormatException;
 import java.security.ProtectionDomain;
@@ -23,12 +31,10 @@ public class BaseTransformer implements ClassFileTransformer {
                             byte[] classfileBuffer
                             //类文件格式的输入字节缓冲区——不得修改
     ) throws IllegalClassFormatException {
-
-
-        
-
-
-
-        return new byte[0];
+        System.out.println("BaseTransformer exec: "+className);
+        ClassReader classReader = new ClassReader(classfileBuffer);
+        PreClassVisitor preClassVisitor = new PreClassVisitor( new ClassWriter(ClassWriter.COMPUTE_MAXS));
+        classReader.accept(preClassVisitor,0);
+        return preClassVisitor.toByteArray();
     }
 }

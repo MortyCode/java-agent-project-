@@ -1,1 +1,4 @@
+top/rcode/transformer/BaseTransformer.class
+top/rcode/visitor/PreClassVisitor.class
 top/rcode/AgentDynamic.class
+top/rcode/visitor/PreMethordVisitor.class
