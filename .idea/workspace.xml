@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b21a0455-28a2-4a31-b640-8420ddf02b9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode/transformer/BaseTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode/visitor/PreClassVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode/visitor/PreMethordVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreClassVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreMethordVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvc-project/src/main/java/top/rcode/manger/DataManger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode/AgentDynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode/AgentDynamic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/classes/top/rcode/AgentDynamic.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/classes/top/rcode/AgentDynamic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/dynamic-agent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/dynamic-agent-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/AgentPre.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/AgentPre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/transformer/BaseTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/transformer/BaseTransformer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/AgentPre.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/AgentPre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/transformer/BaseTransformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/transformer/BaseTransformer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/pre-agent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/pre-agent-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-command/src/main/java/top/rcode/AgentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/src/main/java/top/rcode/AgentCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-command/target/classes/top/rcode/AgentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/target/classes/top/rcode/AgentCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-command/target/dynamic-command-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/target/dynamic-command-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-command/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/src/main/java/top/rcode/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/src/main/java/top/rcode/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/classes/top/rcode/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/classes/top/rcode/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b21a0455-28a2-4a31-b640-8420ddf02b9a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -154,7 +121,7 @@
       <workItem from="1649776655176" duration="5000" />
       <workItem from="1650183160991" duration="11893000" />
       <workItem from="1650438627587" duration="1819000" />
-      <workItem from="1650462305127" duration="147000" />
+      <workItem from="1650462305127" duration="182000" />
     </task>
     <servers />
   </component>
