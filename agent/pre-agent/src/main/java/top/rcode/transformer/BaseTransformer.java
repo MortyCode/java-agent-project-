@@ -31,7 +31,6 @@ public class BaseTransformer implements ClassFileTransformer {
                             byte[] classfileBuffer
                             //类文件格式的输入字节缓冲区——不得修改
     ) throws IllegalClassFormatException {
-        System.out.println("BaseTransformer exec: "+className);
         ClassReader classReader = new ClassReader(classfileBuffer);
         PreClassVisitor preClassVisitor = new PreClassVisitor( new ClassWriter(ClassWriter.COMPUTE_MAXS));
         classReader.accept(preClassVisitor,0);

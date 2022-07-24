@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b21a0455-28a2-4a31-b640-8420ddf02b9a" name="Changes" comment="" />
+    <list default="true" id="b21a0455-28a2-4a31-b640-8420ddf02b9a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/dynamic-agent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/dynamic-agent-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agent/dynamic-agent/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/transformer/BaseTransformer.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/transformer/BaseTransformer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreClassVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreClassVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreMethordVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/src/main/java/top/rcode/visitor/PreMethordVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/transformer/BaseTransformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/transformer/BaseTransformer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/visitor/PreClassVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/visitor/PreClassVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/visitor/PreMethordVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/classes/top/rcode/visitor/PreMethordVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent/pre-agent/target/pre-agent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/agent/pre-agent/target/pre-agent-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-command/target/dynamic-command-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/target/dynamic-command-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-command/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-command/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-project/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/mvc-project/target/mvc-project-1.0-SNAPSHOT.jar.original" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +62,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/agent/dynamic-agent/src/main/java/top/rcode" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2954023" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -67,7 +83,7 @@
       <recent name="top.rcode" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AgentCommand">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="AgentCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="top.rcode.AgentCommand" />
       <module name="dynamic-command" />
@@ -87,6 +103,7 @@
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mvc-project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="top.rcode.Application" />
+      <option name="VM_PARAMETERS" value="-javaagent:$PROJECT_DIR$/agent/pre-agent/target/pre-agent-1.0-SNAPSHOT.jar" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
@@ -121,7 +138,12 @@
       <workItem from="1649776655176" duration="5000" />
       <workItem from="1650183160991" duration="11893000" />
       <workItem from="1650438627587" duration="1819000" />
-      <workItem from="1650462305127" duration="182000" />
+      <workItem from="1650462305127" duration="1022000" />
+      <workItem from="1650893638596" duration="825000" />
+      <workItem from="1651071868736" duration="892000" />
+      <workItem from="1651484200541" duration="2982000" />
+      <workItem from="1652433827631" duration="803000" />
+      <workItem from="1658628599048" duration="984000" />
     </task>
     <servers />
   </component>

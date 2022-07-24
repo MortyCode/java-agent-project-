@@ -1,5 +1,6 @@
 package top.rcode.visitor;
 
+import org.objectweb.asm.AnnotationVisitor;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.MethodVisitor;
@@ -32,13 +33,15 @@ public class PreClassVisitor extends ClassVisitor {
         return super.visitMethod(access, name, descriptor, signature, exceptions);
     }
 
+
     @Override
-    public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
-        super.visit(version, access, name, signature, superName, interfaces);
-        if ("top/rcode/controller/HelloController".equals(name)) {
+    public AnnotationVisitor visitAnnotation(String descriptor, boolean visible) {
+        if ("Lorg/springframework/web/bind/annotation/RestController;".equals(descriptor)){
             classWriter.visitField(Opcodes.ACC_PUBLIC|Opcodes.ACC_STATIC|Opcodes.ACC_FINAL,
-                    "time", "Ljava/lang/Long;", null, "初始值");
+                    "timer", "Ljava/lang/Long;", null, "0");
         }
+
+        return super.visitAnnotation(descriptor, visible);
     }
 
     public byte[] toByteArray() {

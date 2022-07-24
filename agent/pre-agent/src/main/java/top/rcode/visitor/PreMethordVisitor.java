@@ -1,5 +1,7 @@
 package top.rcode.visitor;
 
+import org.objectweb.asm.AnnotationVisitor;
+import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.Type;
@@ -10,13 +12,21 @@ import org.objectweb.asm.Type;
  */
 public class PreMethordVisitor extends MethodVisitor {
 
-    private MethodVisitor methodVisitor;
+    private final MethodVisitor methodVisitor ;
+    private boolean needTime ;
 
     public PreMethordVisitor(MethodVisitor methodVisitor) {
         super(Opcodes.ASM6, methodVisitor);
         this.methodVisitor = methodVisitor;
     }
 
+    @Override
+    public AnnotationVisitor visitAnnotation(String descriptor, boolean visible) {
+        if ("Lorg/springframework/web/bind/annotation/RequestMapping;".equals(descriptor)){
+            needTime = true;
+        }
+        return super.visitAnnotation(descriptor, visible);
+    }
 
     /**
      * 在方法返回前加字段
@@ -30,7 +40,8 @@ public class PreMethordVisitor extends MethodVisitor {
                     "out",
                     Type.getDescriptor(System.out.getClass()));
 
-            methodVisitor.visitLdcInsn("方法返回!");
+            methodVisitor.visitLdcInsn("方法头!");
+
             methodVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
                     Type.getInternalName(System.out.getClass()),
                     "println",
@@ -45,17 +56,20 @@ public class PreMethordVisitor extends MethodVisitor {
      */
     @Override
     public void visitCode() {
-        methodVisitor.visitFieldInsn(Opcodes.GETSTATIC,
-                Type.getInternalName(System.class),
-                "out",
-                Type.getDescriptor(System.out.getClass()));
+        if (needTime){
+            methodVisitor.visitFieldInsn(Opcodes.GETSTATIC,
+                    Type.getInternalName(System.class),
+                    "out",
+                    Type.getDescriptor(System.out.getClass()));
 
-        methodVisitor.visitLdcInsn("方法头!");
-        methodVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
-                Type.getInternalName(System.out.getClass()),
-                "println",
-                "(Ljava/lang/String;)V", false);
-        super.visitCode();
+            methodVisitor.visitLdcInsn("方法头!");
+
+            methodVisitor.visitMethodInsn(Opcodes.INVOKEVIRTUAL,
+                    Type.getInternalName(System.out.getClass()),
+                    "println",
+                    "(Ljava/lang/String;)V", false);
+            super.visitCode();
+        }
     }
 
 }
